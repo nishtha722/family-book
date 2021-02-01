@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://guneet-kaur-27.github.io/My_Family_Book_2/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>
+            Project 78
+        </title>
+
+        <style>
+            body {
+                text-align: center;
+                background-color: rgb(0, 255, 221);
+            }
+
+            #heading {
+                color: rgba(0, 0, 0, 0.63);
+                font-family: cursive;
+                text-decoration-line: underline;
+                text-decoration-style: wavy;
+                text-decoration-color: rgb(25, 209, 209);
+            }
+
+            #image {
+                height:450px;
+                width:400px;
+                border-radius: 10%;
+                border-style: double;
+                border-width: 5px;
+                background-color: white;
+            }
+
+            #name {
+               color: blueviolet; 
+               font-weight: bold;
+               font-size: 22px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1 id="heading">THE FAMILY BOOK</h1>
+
+        <img id="image" src="./Project 78_files/d56cd25436d0d3f56ad2f143750f7455.png">
+
+        <h4 id="name">Mr. Manjit Singh</h4>
+
+        <button onclick="next()">
+            Next
+        </button>
+
+
+        <script>
+            var members= [
+                "https://i.pinimg.com/originals/d5/6c/d2/d56cd25436d0d3f56ad2f143750f7455.png",
+                "https://i.pinimg.com/originals/98/93/ab/9893abe2999501b97dfbf283c05ee765.jpg",
+                "https://cdn1.vectorstock.com/i/thumb-large/87/90/a-father-standing-vector-1658790.jpg",
+                "https://thumbs.dreamstime.com/b/kerala-indian-woman-cute-134899838.jpg",
+                "https://i.pinimg.com/originals/20/b4/9f/20b49f0e0cd8a150c0627ed4c68d5f36.jpg",
+                "https://us.123rf.com/450wm/kakigori/kakigori1511/kakigori151100055/49282228-stock-vector-beautiful-brunette-teenager-girl-with-glasses-sitting-on-isolated-white-background.jpg?ver=6",
+            ];
+            var names= [
+                "Mr. Manjit Singh",
+                "Mrs. Arvinder Kaur",
+                "Mr. Manpreet Singh",
+                "Mrs. Kamalpreet Kaur",
+                "Binay Pratap Singh",
+                "Guneet Kaur"
+            ];
+            var i=0;
+            function next(){
+            document.getElementById("image").src=members[i];
+            document.getElementById("name").innerHTML=names[i];
+            if (i>4){
+            i=0;
+            }
+            else i++;
+            };
+        </script>
+    
+</body></html>
